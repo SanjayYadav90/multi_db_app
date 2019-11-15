@@ -1,4 +1,5 @@
 <h1>Account List</h1>
+<h3><%= link_to "New Account", accounts_new_path %></h3>
 <table style='width:100%'>
   <tr>
     <th style='float: left' >Title</th>
@@ -6,7 +7,7 @@
     <th >Description</th>
   </tr>
 
-  <% @logs.each do |acc| %>
+  <% @accounts.each do |acc| %>
     <tr>
       <td> <%= acc.title %> </td>
       <td> <%= acc.acc_no %> </td>
