@@ -7,6 +7,8 @@ Things you may want to cover:
 
 * Ruby version
 
+* Important Link https://medium.com/@primazp/multiple-databases-in-rails-part-1-setup-48f6d207685a
+
 * System dependencies
 
 * Configuration
