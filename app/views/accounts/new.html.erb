@@ -1,7 +1,7 @@
 <h1 style="margin-left: 5%">Add new Account</h1>
 
 <table style='width:100%;'>
-  <%= form_for @log, :url => { :action => "create" } do |f| %>
+  <%= form_for @account, :url => { :action => "create" } do |f| %>
     <tr>
       <td> <label>Title</label> </td>
       <td> <%= f.text_field :title %> <br> </td>
