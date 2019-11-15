@@ -1,0 +1,17 @@
+<h1>Posts List</h1>
+<table style='width:100%'>
+  <tr>
+    <th style='float: left' >Title</th>
+    <th style='float: left' >Author</th>
+    <th >Description</th>
+  </tr>
+
+  <% @posts.each do |post| %>
+    <tr>
+      <td> <%= post.title %> </td>
+      <td> <%= post.author %> </td>
+      <td> <%= post.description %> </td>
+    </tr>
+  <% end %>
+</table>
+

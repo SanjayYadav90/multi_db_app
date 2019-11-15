@@ -1,0 +1,28 @@
+default: &default
+  adapter: mysql2
+  encoding: utf8
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock
+
+development:
+  <<: *default
+  database: more_db_app_dev
+
+#test:
+#  <<: *default
+#  database: more_db_app_dev
+
+# available as an environment variable. For example:
+#   DATABASE_URL="mysql2://myuser:mypass@localhost/somedatabase"
+#
+# You can use this database configuration with:
+#   production:
+#     url: <%= ENV['DATABASE_URL'] %>
+
+#production:
+#  <<: *default
+#  database: more_db_app_production
+#  username: more_db_app
+#  password: <%= ENV['MORE_DB_APP_DATABASE_PASSWORD'] %>

@@ -1,0 +1,17 @@
+<h1>Log List</h1>
+<table style='width:100%'>
+  <tr>
+    <th style='float: left' >Title</th>
+    <th style='float: left' >Status</th>
+    <th >Description</th>
+  </tr>
+
+  <% @logs.each do |log| %>
+    <tr>
+      <td> <%= log.title %> </td>
+      <td> <%= log.status %> </td>
+      <td> <%= log.description %> </td>
+    </tr>
+  <% end %>
+</table>
+

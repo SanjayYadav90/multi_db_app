@@ -1,0 +1,23 @@
+<h1 style="margin-left: 5%">Add new log</h1>
+
+<table style='width:100%;'>
+  <%= form_for @log, :url => { :action => "create" } do |f| %>
+    <tr>
+      <td> <label>Title</label> </td>
+      <td> <%= f.text_field :title %> <br> </td>
+    </tr>
+    <tr>
+      <td> <label>Status</label> </td>
+      <td> <%= f.text_field :status %> <br> </td>
+    </tr>
+    <tr>
+      <td><label>Description</label></td>
+      <td>  <%= f.text_field :description %> <br>  </td>
+    </tr>
+    <tr>
+      <td></td>
+      <td> <%= f.submit "Create Log" %> </td>
+    </tr>
+
+  <% end %>
+</table>

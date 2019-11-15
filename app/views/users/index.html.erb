@@ -1,0 +1,17 @@
+<h1>Users List</h1>
+<table style='width:100%'>
+  <tr>
+    <th style='float: left' >Title</th>
+    <th >Description</th>
+  </tr>
+
+  <% @users.each do |usr| %>
+    <tr>
+      <td> <%= usr.name %> </td>
+      <td> <%= usr.age %> </td>
+      <td> <%= usr.address %> </td>
+    </tr>
+  <% end %>
+</table>
+
+
